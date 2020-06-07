@@ -1,0 +1,196 @@
+/* LOGO ET TITRE   */
+
+.containerUn {
+    display: flex;
+    margin-top: 5vw;
+    margin-left: 15vw;
+}
+
+.containerDeux,
+.containerTrois {
+
+    width: 65vw;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.fondImage {
+    background-image: url("/images/palets_breton.jpg");
+
+}
+
+.rondUntitre h1 {
+    font-size: 23px;
+    color: rgb(255, 255, 255);
+    font-family: 'Gotu',
+        sans-serif;
+    text-align: center;
+    margin-top: 28%;
+}
+
+.rondUntitre {
+    border: solid 2px darkgreen;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(36, 124, 36);
+}
+
+
+
+.barreDuBas {
+    width: 800px;
+    height: 2px;
+    background-color: rgb(167, 182, 167);
+    margin-left: 38px;
+    margin-top: -8px;
+}
+
+/*botton MODAL*/
+.element_1 p {
+    color: rgb(44, 85, 17);
+    position: absolute;
+    margin-left: 290px;
+    margin-top: 82px;
+    background-color: rgb(167, 182, 167);
+    ;
+}
+
+.element_1 .formJoueur {
+    color: rgb(44, 85, 17);
+    position: absolute;
+    margin-left: 290px;
+    margin-top: 52px;
+    background-color: rgb(167, 182, 167);
+    ;
+}
+
+.ajout {
+    background-color: rgb(44, 85, 17);
+    padding: 4px;
+    color: aliceblue;
+
+}
+
+.ajout:hover {
+    background-color: rgb(167, 182, 167);
+    padding: 5px;
+    color: rgb(44, 85, 17);
+}
+
+
+
+
+
+
+
+/*TABLEAU*/
+table {
+    border-collapse: separate;
+}
+
+input {
+    border-radius: 50%;
+    text-align: center;
+}
+
+/*TD TH TR*/
+td,
+th {
+    text-align: center;
+    color: rgb(92, 126, 70);
+}
+
+
+
+td:nth-child(6) {
+    text-align: right;
+}
+
+th {
+    text-align: center;
+}
+
+/*Picto croix*/
+.elt-supprimer {
+    height: 30px;
+    align-content: center;
+    cursor: pointer;
+}
+
+/*compteur*/
+.containerDeux p,
+.containerTrois p {
+    background-color: rgb(189, 199, 187);
+    color: rgb(18, 31, 20);
+    padding: 2px;
+    padding-left: 10px;
+}
+
+.inputCssScore {
+    width: 50px;
+}
+
+
+.spanCssManche {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border: solid 2px rgb(101, 165, 18);
+}
+
+
+
+
+
+
+/*Textes Joueurs et boutton termine*/
+
+.ligne .vs {
+    color: rgb(18, 31, 20);
+}
+
+.ligne .j1 {
+    color: rgb(18, 31, 20);
+}
+
+.ligne .j2 {
+    color: rgb(18, 31, 20);
+
+}
+
+/*Modification boutton temps réel et rafraichie*/
+
+.spanEnCour {
+    color: rgb(18, 31, 20);
+
+}
+
+.termine {
+    color: rgb(155, 168, 155);
+}
+
+/*Modification joueurs partie terminée*/
+.ligne .vert {
+    color: rgb(92, 126, 70);
+    border-left: 1px solid rgb(92, 126, 70);
+    border-right: 1px solid rgb(92, 126, 70);
+}
+
+.ligne .gray {
+    color: rgb(155, 168, 155);
+}
+
+.table td {
+    color: rgb(155, 168, 155);
+
+}
+
+/*Text pour error de scores*/
+.hidden {
+    display: none;
+}
+
+.noValidScore {
+    color: rgb(160, 11, 11);
+}

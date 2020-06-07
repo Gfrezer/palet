@@ -1,0 +1,23 @@
+{
+  "name": "gestionpartiejeu",
+  "version": "1.0.0",
+  "description": "Application pour gérer des parties de baby-foot",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "Gael",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bufferutil": "^4.0.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.3",
+    "hbs": "^4.1.1",
+    "nodemon": "^2.0.2",
+    "pg": "^8.0.0",
+    "utf-8-validate": "^5.0.2",
+    "ws": "^7.2.3"
+  }
+}

@@ -1,0 +1,51 @@
+<div class="fondImage">
+    <section class="containerUn">
+        <div class="element_1">
+            <div class="titre">
+                <div class="rondUntitre">
+                    <div class="joueurlogo"></div>
+                    <p> <a href="/createEquipe">Ajouter une nouvelle Equipe:</a></p>
+                    <p class="formJoueur">Inscription: {{> joueurForm}}</p>
+                    <h1>Compteur</br>de Palet</h1>
+                    <div class="barreDuBas"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+
+<div class="imageFondTableau">
+    <section class="containerDeux">
+
+        <table class="table">
+            <p>Parties en cours: <span id="compteur">{{count}}</span></p>
+            <thead>
+                <tr>
+
+                    <th scope="col">equipe 1</th>
+                    <th scope="col">Score</th>
+                    <th scope="col"></th>
+                    <th scope="col">Score</th>
+                    <th scope="col">equipe 2</th>
+                    <th scope="col">Validez points</th>
+                    <th scope="col">EQP 1</th>
+                    <th scope="col">EQP 2</th>
+                    <th scope="col">Supprimer</th>
+
+                </tr>
+            </thead>
+            <tbody>
+
+                {{#each model}}
+                {{> tableauLigne}}
+                {{/each}}
+
+
+
+            </tbody>
+        </table>
+
+    </section>
+</div>

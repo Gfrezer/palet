@@ -1,0 +1,55 @@
+<tr class="ligne" data-id="{{id}}">
+
+    {{#unless partietermine }}
+    <td class="j1 ">{{equipe1}} </td>
+    <td>
+        <input class="inputJ1 inputCssScore" value="{{score1}}">
+    </td>
+    <td class="vs"> vs</td>
+    <td>
+        <input class="inputJ2 inputCssScore" value="{{score2}}">
+    </td>
+    <td class="j2">{{equipeAdverse}}</td>
+    {{/unless}}
+
+
+
+
+
+
+    {{#if partietermine}}
+    {{#if (estPlusGrand score1 score2)}}
+    <td class="j1 vert">{{equipe1}} </td>
+    <td>{{score1}}</td>
+    <td class="vs gray"> vs</td>
+    <td>{{score2}}</td>
+    <td class="j2 gray">{{equipeAdverse}}</td>
+
+
+    {{else}}
+    <td class="j1 gray">{{equipe1}} </td>
+    <td>{{score1}}</td>
+    <td class="vs gray"> vs</td>
+    <td>{{score2}}</td>
+    <td class="j2 vert">{{equipeAdverse}}</td>
+    {{/if}}
+    {{/if}}
+
+
+    <td><button type="submit" data-id="{{id}}" id="btn-{{id}}" class="btn-validez">
+            <span class="valider">Validez</span>
+        </button>
+    </td>
+
+    <td>
+        <input class="eqp1 spanCssManche" value="{{manche1}}">
+    </td>
+    <td>
+        <input class="eqp2 spanCssManche" value="{{manche2}}">
+    </td>
+
+    <td><img src="/images/icons8-effacer-48.png" value="{{id}}" class="elt-supprimer" id="submit-{{id}}">
+
+    </td>
+
+</tr>

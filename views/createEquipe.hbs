@@ -1,0 +1,80 @@
+<!---->
+<div>
+    <div>
+        <h1>Nouvelle partie</h1>
+        <div class="textModal">Veillez entrer le nom de l'equipe:</div>
+        <div class="element_2">
+            <div class="form-group">
+                <label for="joueurDeux">Nom deL'équipe</label>
+                <input type="text" name="equipe" class="form-control" id="equipe">
+                <small id="joueurUn" class="form-text text-muted"></small>
+                <button class="boutonCreateEquipe"> Continuez</button>
+            </div>
+        </div>
+        </form>
+    </div>
+
+    <div id="open-modal-joueur-equipe" class="modal-window">
+        <div>
+            <form action="/formEquipeJoueur" method="POST">
+                <input type="hidden" name="nomEquipe" />
+                <h4 class="nomDeLequipe"> </h4>
+                <a href="#modal-close" title="Close" class="modal-close">close &times;</a>
+                <div class="textModal">Veillez entrer le nom des joueurs:</div>
+
+                <div class="element_2">
+                    <div class="form-group">
+                        <label for="joueur1">Nom du joueur numero 1</label>
+                        <input type="text" name="nom" class="form-control" id="nom1">
+                        <input type="text" name="prenom" class="form-control" id="prenom1">
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="joueur2">Nom du joueur numero 2</label>
+                        <input type="text" name="nom" class="form-control" id="nom2">
+                        <input type="text" name="prenom" class="form-control" id="prenom2">
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="joueur3">Nom du joueur numero 3</label>
+                        <input type="text" name="nom" class="form-control" id="nom3">
+                        <input type="text" name="prenom" class="form-control" id="prenom3">
+
+                        <button type="submit" class="modal-valid-close">Validez</button>
+                    </div>
+                </div>
+
+        </div>
+        </form>
+    </div>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="row">Equipe</th>
+            <th scope="row">joueur 1</th>
+            <th scope="row">joueur 2</th>
+            <th scope="row">joueur 3</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr>
+
+            <td scope="row">{{equipe.idEquipe}}</td>
+            {{#each equipe.joueurs}}
+            <td>{{nom}} {{prenom}}</td>
+            {{/each}}
+        </tr>
+
+
+
+
+
+    </tbody>
+
+
+</table>
